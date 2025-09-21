@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Whisprr</title>
+  <link rel="stylesheet" href="index2.css" />
+</head>
+<body>
+
+<div class="overlay" id="overlay">
+  <div class="name-popup" id="name-popup">
+    <div class="form">
+      <h2>Enter Name</h2>
+      <div class="form-element">
+        <label for="username">Name</label>
+        <input type="text" id="username" placeholder="Enter Name"> 
+      </div>
+      <div class="form-element">
+        <button id="enter-btn">Enter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="app">
+  <aside class="sidebar">
+    <h2>Whisprr</h2>
+    <div class="online-count" id="online-count"></div>
+    <div class="user-list" id="user-list"></div>
+  </aside>
+
+  <div class="chat-area">
+    <div class="chat-header">
+      <h3 id="group-name">Group Chat</h3>
+      <button id="leave-button" title="Leave Chat">🚪 Leave</button>
+      <div class="typing-indicator" id="typing-indicator"></div>
+    </div>
+
+    <div class="chat-box" id="chat-box">
+      <div class="placeholder">No messages yet...</div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="message-input" placeholder="Type a message..." />
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="index2.js"></script>
+</body>
+</html>

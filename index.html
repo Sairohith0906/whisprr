@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+   <title>Whisprr</title>
+   <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">💬Whisprr</h2>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#why" class="nav-link">About</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#" class="nav-link">Contact us</a>
+                    </li> -->
+                </ul>
+            </a>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="section-content">
+            <div class="hero-details">
+                <h2 class="title">Chat Instantly. No Signups!</h2>
+                <h3 class="subtitle">Whisprr lets you jump straight into conversations with just a room code — no accounts, no setup, just real-time chat made simple.</h3>
+                <div class="buttons">
+                    <a href="#" class="button join-chat" id="join">Join Chat</a>
+                    <a href="#" class="button" id="create-room">Create Room</a>
+                </div>
+            </div>
+            <img src="./bot-image.png" alt="Two bots Chatting with each other" class="bot-image">
+        </div>
+    </section>
+
+    <div class="overlay" id="overlay-join">
+    <div class="popup-join-chat">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Join Chat</h2>
+            <div class="form-element">
+                <label for="room-code">Room Code</label>
+                <input id="created-room-code" type="text" placeholder="Enter Room Code"> 
+            </div>
+            <div class="form-element">
+                <button id="joining_chat">Join Chat</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="overlay" id="overlay-create">
+    <div class="popup-create-room">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Create Room</h2>
+            <div class="form-element">
+                <label for="room-code">Room Code</label>
+                <input type="text" id="create-room-code"placeholder="Enter Room Code"> 
+            </div>
+            <div class="form-element">
+                <label for="group-name">Group Name</label>
+                <input type="text" id="group-name" placeholder="Enter Group Name"> 
+            </div>
+            <div class="form-element">
+                <button id="creating_room">Create Room</button>
+            </div>
+        </div>
+    </div>
+    </div>
+   <section class="why-whisprr" id="why">
+  <h2 class="section-title">Why Whisprr?</h2>
+  <div class="features-container">
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <div class="feature-box">
+        <img src="./ban.png" alt="No Signups">
+        <h3>No Signups</h3>
+        <p>Start chatting instantly. No registration, no email, no hassle.</p>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1500">
+        <div class="feature-box">
+        <img src="./flash.png" alt="Private Rooms">
+        <h3>Private Rooms</h3>
+        <p>Secure, room-based chats. Only those with the code can join.</p>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="2100">
+        <div class="feature-box">
+        <img src="./person.png" alt="Simple & Respectful">
+        <h3>Simple & Respectful</h3>
+        <p>A clean interface promoting respectful, clutter-free conversations.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <span>© 2025 Whisprr</span>
+
+    <div class="social-icons">
+      <a class="linked" href="https://www.linkedin.com/in/yogabhi-shashank-5a057728a/"><img src="./linkedin.png" alt="Facebook" /></a>
+      <a class="linked" href="https://www.linkedin.com/in/yamparala-akash/"><img src="./linkedin.png" alt="Instagram" /></a>
+      <a class="linked" href="https://www.linkedin.com/in/sairohith0906/"><img src="./linkedin.png" alt="X/Twitter" /></a>
+    </div>
+
+    <!-- <div class="footer-links">
+      <a href="#">Send us Feedback.</a> 
+    </div> -->
+  </div>
+</footer>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script type="module" src="./index.js"></script>
+      <!-- <script src="./main.js"></script> -->
+  <script>
+    AOS.init();
+  </script>
+</body>
